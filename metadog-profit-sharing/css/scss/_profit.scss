@@ -1,0 +1,16 @@
+// profit Sahring style;
+.profit{
+    padding: 80px 0;
+    text-align: center;
+    h1{
+        font-size: calc(1.5vw + 1.5rem);
+        color: #222;
+    }
+    p{
+        margin: 30px auto 0;
+        padding-right: 20px;
+        @media (min-width: 991px) {
+          width: 70%;
+        }
+    }
+}

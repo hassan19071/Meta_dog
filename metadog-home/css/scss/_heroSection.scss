@@ -1,0 +1,50 @@
+// hero section style;
+.hero {
+  background-image: url("../imgs/heroBg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .content {
+    color: #fefefed4;
+    h1 {
+      text-transform: uppercase;
+      font-size: calc(2vw + 1.5rem);
+    }
+    p {
+      width: 80%;
+      @media (max-width: 991px) {
+        width: 90%;
+      }
+    }
+    a {
+        box-shadow: none;
+        transition: .3s;
+      &:first-of-type{
+        padding: 10px 20px;
+        background-color: #fefefe;
+        color: #000;
+        border: 1.5px solid #fefefe;
+        &:hover{
+            background: transparent;
+            color: #fefefe;
+        }
+      }
+      &:last-of-type{
+        border: 1.5px solid #fefefe;
+        padding: 10px 30px;
+        color: #fefefe;
+        &:hover{
+            background: #fefefe;
+            color: #000;
+        }
+      }
+    }
+  }
+  .video {
+    video {
+      width: 100%;
+      object-fit: cover !important;
+      display: block;
+    }
+  }
+}

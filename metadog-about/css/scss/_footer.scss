@@ -1,0 +1,62 @@
+// footer style;
+footer{
+    background-image: url("../imgs/heroBg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 0;
+    .layout{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.51);
+    }
+    .logo{
+        img{
+            width: calc(2vw + 8rem)
+        }
+    }
+   .follow-us{
+    width: fit-content;
+    margin-left: auto;
+    text-align: center;
+        h3{
+            color: #fefefe;
+            margin-bottom: 15px;
+            font-size: calc(1vw + 1rem);
+        }
+        a{
+            img{
+                width: 30px;
+            }
+        }
+   }
+   .foot{
+    background-color: rgba(0, 0, 0, 0.271);
+    margin-top: 30px;
+    padding: 20px 0;
+    color: #fefefe;
+    .links{
+        a{
+            margin:  0 10px;
+            color: #fefefe;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0%;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                background-color: #fefefe;
+                transition: 0.3s;
+              }
+              &:hover{
+                &::before {
+                    width: 100%;
+                  }
+              }
+        }
+    }
+   }
+}

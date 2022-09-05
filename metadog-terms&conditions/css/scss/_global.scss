@@ -1,0 +1,41 @@
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: #f3f6f4;
+  font-style: normal;
+  line-height: 1.8;
+  position: relative;
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-title{
+  padding: 100px 0;
+  background-image: url("../imgs/heroBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1{
+    color: #fefefe;
+    font-size: calc(1.5vw + 1.5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .links{
+    color: #f3f6f4;
+    a{
+      color: #fefefe;
+      margin:0 10px;
+      &:last-of-type{
+        opacity: .9;
+        &:hover{
+          color: #fefefe;
+        }
+      }
+    }
+  }
+}

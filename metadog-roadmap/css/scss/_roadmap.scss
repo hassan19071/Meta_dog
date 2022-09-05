@@ -1,0 +1,155 @@
+// roadmap style;
+.roadmap{
+    margin: 80px 0;
+    .map{
+        position: relative;
+        .line{
+            position: absolute;
+            height: 100%;
+            width: 4px;
+            background-color: rgb(208, 206, 206);
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .phase{
+            margin: 30px 0;
+            @media (max-width:991px) {
+                flex-direction: column;
+                .title{
+                    order: 1;
+                    margin-top: 40px;
+                    position: relative;
+                    background-color: #f3f6f4;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-80%);
+                        border: 3px solid rgb(69, 69, 69);
+                                box-shadow: 0 0 10px 2px rgb(164, 164, 164);
+                                background-color: rgb(70, 70, 70);
+                    }
+                }
+                .text{
+                    order: 2;
+                    margin: 20px 0 !important;
+                }
+            }
+            >div{
+                &.text{
+                    width: 100%;
+                    margin: 0;
+                    h2{
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: #333;
+                        border-bottom: 4px solid rgb(207, 207, 207);
+                        padding-bottom: 20px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+                &.title{
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #444;
+                    }
+                }
+            }
+            &.right{
+                >div{
+                    &.text{
+                        padding: 20px;
+                        background-color: rgb(230, 227, 227);
+                        border-radius: 10px;
+                        @media (min-width:992px) {
+                            width: 45%;
+                            margin-right: 5%;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                border: 15px solid transparent;
+                                border-left: 15px solid #ddd;
+                                top: 50%;
+                                right: 0px;
+                                transform: translateY(-50%) translateX(100%);
+                            }
+                        }
+                    }
+                    &.title{
+                        position: relative;
+                        @media (min-width:992px) {
+                            padding-left: 5%;
+                              &::after{
+                                content: "";
+                                position: absolute;
+                                left: 0%;
+                                top: 50%;
+                                transform: translateY(-50%) translateX(-50%);
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                border: 3px solid rgb(69, 69, 69);
+                                box-shadow: 0 0 10px 2px rgb(164, 164, 164);
+                                background-color: rgb(70, 70, 70);
+                              }
+                         }
+                    }
+                }
+            }
+            &.left{
+                >div{
+                    &.text{
+                        padding: 20px;
+                        background-color: #ddd;
+                        border-radius: 10px;
+                        @media (min-width:992px) {
+                            width: 45%;
+                            margin-left: auto;
+                            margin-right: 0;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                border: 15px solid transparent;
+                                border-right: 15px solid #ddd;
+                                top: 50%;
+                                left: 0px;
+                                transform: translateY(-50%) translateX(-95%);
+                            }
+                        }
+                    }
+                    &.title{
+                        @media (min-width:992px) {
+                           text-align: right;
+                           width: 50%;
+                           padding-right: 5%;
+                           position: relative;
+                           &::after{
+                            content: "";
+                            position: absolute;
+                            right: 0%;
+                            top: 50%;
+                            transform: translateY(-50%) translateX(50%);
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            border: 3px solid rgb(69, 69, 69);
+                                box-shadow: 0 0 10px 2px rgb(164, 164, 164);
+                                background-color: rgb(70, 70, 70);
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

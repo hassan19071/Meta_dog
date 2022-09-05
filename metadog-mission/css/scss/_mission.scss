@@ -1,0 +1,112 @@
+// mission style
+.mission{
+    margin: 80px 0;
+    .img{
+        border: 4px solid rgb(234, 234, 234);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .text{
+       h1{
+            font-size: calc(1.5vw + 1.5rem);
+            color: #222;
+            span {
+            transform: rotate(5deg);
+            display: inline-block;
+            color: rgb(204, 113, 22);
+            transform-origin: 100%;
+            }
+       }
+       .missions-types{
+        margin: 30px 0;
+        h4{
+            color: #333;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p{
+            padding: 10px 20px;
+            background-color: rgb(233, 233, 233);
+            border-radius: 5px;
+            position: relative;
+            width: 90%;
+            &::after{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #ddd;
+                box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) translateX(50%);
+                color: #000;
+            }
+            &:first-of-type::after{
+                content: "1";
+            }
+            &:last-of-type::after{
+                content: "2";
+            }
+        }
+       }
+       .values{
+        h4{
+            color: #333;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .val{
+            background-color: rgb(234, 234, 234);
+            margin: 10px 0;
+            height: 100px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 20px;
+           text-align: center;
+           font-size: 15px;
+           font-weight: 600;
+           color: #333;
+           border-radius: 10px;
+        }
+       }
+    }
+}
+
+// start vision
+
+.vision{
+    margin: 80px 0;
+    .img{
+        border: 4px solid rgb(234, 234, 234);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .text{
+       h1{
+            font-size: calc(1.5vw + 1.5rem);
+            color: #222;
+            span {
+            transform: rotate(5deg);
+            display: inline-block;
+            color: rgb(204, 113, 22);
+            transform-origin: 100%;
+            }
+       }
+       p {
+        margin: 30px 0 0;
+        padding-right: 20px;
+      }
+    }
+}
+
+// ft image;
+.ft-img{
+    img{  
+        clip-path: polygon(36% 20%, 49% 2%, 64% 20%, 77% 1%, 100% 28%, 100% 100%, 0 100%, 0 0, 11% 18%, 24% 1%);
+    }
+}

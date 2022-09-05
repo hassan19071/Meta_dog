@@ -1,0 +1,116 @@
+// navbar style;
+.navbar {
+  background-color: #f3f6f4;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  height: 70px;
+  padding: 0;
+  .navbar-brand {
+    img {
+      width: calc(2vw + 8rem);
+    }
+  }
+  .navbar-toggler {
+    box-shadow: none !important;
+  }
+  .navbar-collapse {
+    .navbar-toggler {
+      box-shadow: none !important;
+    }
+    .x {
+      top: 0;
+      left: 0;
+      padding: 20px 0;
+    }
+    .nav-item {
+      margin: 0px 10px;
+      padding: 10px 0;
+      &.dropdown {
+        right: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      .nav-link {
+        color: #777;
+        font-weight: 500;
+        transition: 0.3s;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background-color: #666;
+          transition: 0.3s;
+        }
+        &.active,
+        &:hover {
+          color: #666;
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      .dropdown-item {
+        position: relative;
+        background-color: transparent !important;
+        color: #777;
+        transition: 0.3s;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background-color: #666;
+          transition: 0.3s;
+        }
+        &.active,
+        &:hover {
+          color: #666;
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      background-color: #f3f6f4;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      width: 300px;
+      transform: translateX(120%) translateY(0) !important;
+      transition: 0.35s;
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+      padding: 80px;
+      text-align: center;
+      z-index: 100;
+      &.show {
+        transform: translateX(0) translateY(0) !important;
+      }
+      .nav-item {
+        margin: 10px 0;
+        padding: 0;
+      }
+    }
+    .dropdown-menu {
+      background-color: #f3f6f4;
+      box-shadow: none !important;
+      padding: 10px 20px;
+      width: 250px;
+      right: 0;
+      transform: translateX(-66%);
+      .dropdown-item {
+        margin: 10px 0;
+      }
+      @media (max-width: 991px) {
+        transform: translateX(-20%);
+      }
+    }
+  }
+}

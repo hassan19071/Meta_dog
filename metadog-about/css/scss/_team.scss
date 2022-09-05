@@ -1,0 +1,49 @@
+// team style
+.team{
+    margin: 100px 0;
+    .head {
+        h1 {
+          font-size: calc(1.5vw + 1.5rem);
+          color: #222;
+          span {
+            transform: rotate(5deg);
+            display: inline-block;
+            color: rgb(204, 113, 22);
+            transform-origin: 100%;
+          }
+        }
+        p {
+          margin: 30px auto 0;
+          padding-right: 20px;
+          @media (min-width: 991px) {
+            width: 70%;
+          }
+        }
+      }
+      .member{
+        margin-top: 20px;
+        background-color: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        .img{
+            height:300px;
+            img{
+                height: 100%;
+            }
+            @media (max-width:766px) {
+                height: 200px;
+            }
+        }
+        .text {
+          padding: 15px 10px;
+          color: #1b1a1a;
+          h3 {
+            font-size: 24px;
+            font-weight: 600;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+}

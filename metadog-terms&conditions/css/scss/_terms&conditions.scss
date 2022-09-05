@@ -1,0 +1,51 @@
+// terms & conditions Style;
+.terms{
+    padding: 80px 0;
+    .head{
+        margin-bottom: 40px;
+        h1{
+            font-size: calc(1.5vw + 1.5rem);
+            color: #222;
+        }
+        span{
+            font-size: 15px;
+            color: #444;
+        }
+    }
+    .term{
+        margin-top: 40px;
+        h3{
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+        .leaves{
+            width: 90%;
+        }
+    }
+    h2{
+        color: #222;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    &.hide{
+        visibility: hidden;
+        opacity: 0;
+    }
+}

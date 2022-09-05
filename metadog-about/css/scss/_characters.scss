@@ -1,0 +1,43 @@
+// start characters;
+.characters {
+  margin: 80px 0;
+  .head {
+    h1 {
+      font-size: calc(1.5vw + 1.5rem);
+      color: #222;
+      span {
+        transform: rotate(5deg);
+        display: inline-block;
+        color: rgb(204, 113, 22);
+        transform-origin: 100%;
+      }
+    }
+    p {
+      margin: 30px auto 0;
+      padding-right: 20px;
+      @media (min-width: 991px) {
+        width: 70%;
+      }
+    }
+  }
+  .character {
+    margin-top: 20px;
+    background-color: rgb(189, 196, 196);
+    border-radius: 10px;
+    &.brown {
+      background-color: #a2a20d7e;
+    }
+    overflow: hidden;
+    .text {
+      padding: 15px 10px;
+      color: #1b1a1a;
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

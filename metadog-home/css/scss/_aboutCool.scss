@@ -1,0 +1,19 @@
+// about style;
+.about-cool{
+    padding: 80px 0;
+    background-color: rgba(119, 119, 119, 0.058);
+    .img{
+        margin: 10px 0;
+        border: 4px solid rgb(254, 254, 254);
+        height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+        @media (max-width:766px) {
+            height: 200px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
